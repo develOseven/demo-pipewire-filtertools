@@ -1,0 +1,25 @@
+
+[project]
+name = "demo-pipewire-filtertools"
+version = "0.1.0"
+authors = [
+  { name="develOseven", email="devel.oseven@gmail.com" },
+]
+description = "Demo app for PipeWire filter tools C library and Python bindings"
+readme = "README.md"
+dependencies = [
+  "pipewire-filtertools",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.scripts]
+demo-pipewire-filtertools = "demo_pipewire_filtertools:main.main"
+
+[project.urls]
+Homepage = "https://github.com/develOseven/demo-pipewire-filtertools"
+Issues = "https://github.com/develOseven/demo-pipewire-filtertools/issues"
