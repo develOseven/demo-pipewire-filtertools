@@ -30,5 +30,6 @@ def main():
 
     loop = pfts.main_loop_new()
     print(f"[pipewire-filtertools] Running loopback: rate={rate}, quantum={quantum}")
-    pfts.main_loop_run(ctypes.c_void_p(), loop, f"demo-pipewire-filtertools-{os.getpid()}".encode(), rate, quantum, on_process)
+    pfts.main_loop_run(ctypes.c_void_p(), loop, f"demo-pipewire-filtertools-{os.getpid()}".encode(), True, rate, quantum, on_process)
+    pfts.main_loop_destroy(loop)
     pfts.deinit()
